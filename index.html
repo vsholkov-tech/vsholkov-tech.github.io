@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Vasiliy Sholkov | Business Development Manager</title>
+    <meta name="description" content="Business Development Manager at A2 Consulting. Helping manufacturing and construction enterprises turn data into profit with DWH, BI, AI/ML, and Digital Twins.">
+    
+    <!-- Open Graph (Для красивого превью в Telegram и LinkedIn) -->
+    <meta property="og:title" content="Vasiliy Sholkov | Turning Data Into Profit">
+    <meta property="og:description" content="Bridging the gap between business, production, and technology. DWH, BI, AI/ML for Manufacturing & Construction.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://a2c.by/wp-content/uploads/2021/12/logo-a2.png"> 
+
+    <link rel="icon" type="image/png" href="https://a2c.by/wp-content/uploads/2021/12/logo-a2.png">
+
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #3b82f6;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .headline {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            background-color: #2563eb;
+        }
+
+        .contact-links a.secondary {
+            background-color: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .contact-links a.secondary:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+
+        /* QR Code Section */
+        .contact-card {
+            display: flex;
+            align-items: center;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px auto 50px auto;
+            max-width: 650px;
+            gap: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-code-container {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .qr-code-container img {
+            display: block;
+            width: 140px;
+            height: 140px;
+        }
+
+        .contact-details {
+            text-align: left;
+            flex: 1;
+        }
+
+        .contact-details strong {
+            color: var(--text-main);
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            color: var(--text-muted);
+            margin-bottom: 4px;
+            font-size: 0.95rem;
+        }
+
+        .contact-details a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        /* About */
+        .about-text {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .about-text strong {
+            color: var(--text-main);
+        }
+
+        .highlights {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .highlights li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .highlights li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Cards (Experience & Education) */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-color);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .card-company {
+            font-size: 1rem;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+        
+        .card-company a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .card-company a:hover {
+            text-decoration: underline;
+        }
+
+        .card-date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 10px;
+        }
+
+        .card ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .card ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .card-header {
+                flex-direction: column;
+            }
+            .card-date {
+                margin-top: 5px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .contact-details {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Vasiliy Sholkov</h1>
+        <div class="headline">
+            Business Development Manager | Digital Transformation & Data Analytics (DWH, BI, AI/ML) for Manufacturing & Construction
+        </div>
+        <div class="contact-links">
+            <!-- ССЫЛКА НА LINKEDIN ОБНОВЛЕНА. Если она не работает, замените её на ссылку из адресной строки вашего профиля. -->
+            <a href="https://www.linkedin.com/in/vasiliy-sholkov-5b96b721b/" target="_blank">LinkedIn</a>
+            
+            <a href="https://t.me/SholkovVasiliy" target="_blank" class="secondary">Telegram</a>
+            <a href="mailto:v.sholkov@a2c.by" class="secondary">Email</a>
+        </div>
+    </header>
+
+    <div class="contact-card">
+        <div class="qr-code-container">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AVasiliy%20Sholkov%0AORG%3AA2%20Consulting%0ATITLE%3ABusiness%20Development%20Manager%0ATEL%3BTYPE%3DCELL%3A%2B375293730703%0AEMAIL%3Av.sholkov%40a2c.by%0AURL%3Ahttps%3A%2F%2Ft.me%2FSholkovVasiliy%0AEND%3AVCARD" alt="QR Code vCard">
+        </div>
+        <div class="contact-details">
+            <strong>Scan to save contact</strong>
+            <p>Vasiliy Sholkov</p>
+            <p>Business Development Manager</p>
+            <p>A2 Consulting</p>
+            <p><a href="tel:+375293730703">+375 (29) 373-07-03</a></p>
+            <p>TG: <a href="https://t.me/SholkovVasiliy" target="_blank">@SholkovVasiliy</a></p>
+            <p><a href="mailto:v.sholkov@a2c.by">v.sholkov@a2c.by</a></p>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-text">
+            <p>Are your manufacturing or construction projects drowning in data but starving for actionable insights?</p>
+            <br>
+            <p>I help industrial enterprises turn complex data into profit by implementing modern data architectures (DWH, BI, AI/ML, Digital Twins).</p>
+            <br>
+            <p>My unique advantage? A combination of <strong>20 years in mechanical engineering</strong>, a degree in economics, and hands-on experience as a <strong>Java Developer</strong>. I don't just sell IT services—I understand the shop floor, the construction site, and the bottom line. I bridge the gap between business, production, and technology.</p>
+            
+            <ul class="highlights">
+                <li><strong>Business & IT Acumen:</strong> Successfully managed resource allocation for up to 150 specialists and supported IT projects with a monthly revenue of $600,000+.</li>
+                <li><strong>Tech & Economics:</strong> Fluent in calculating cost, profitability, and risks. Experienced working with Enterprise clients and fintech.</li>
+                <li><strong>Engineering Mindset:</strong> I find solutions where there are no out-of-the-box templates and speak the language of both engineers and programmers.</li>
+            </ul>
+            <br>
+            <p>Currently, as a Business Development Manager at A2 Consulting (Qlik Partner, CORUS Consulting Group), I help companies build a data-driven culture.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Business Development Manager</div>
+                    <div class="card-company"><a href="https://a2c.by" target="_blank">A2 Consulting</a></div>
+                </div>
+                <div class="card-date">Aug 2026 – Present</div>
+            </div>
+            <ul>
+                <li>Driving business growth and digital transformation strategies across diverse industries, including Manufacturing, Construction, Retail, and Fintech.</li>
+                <li>Spearheading B2B sales of Data Management, BI, and AI/ML solutions (Qlik, Digital Twins) for Enterprise clients.</li>
+                <li>Bridging the gap between client business needs and technical teams to deliver scalable, data-driven solutions.</li>
+                <li>Identifying new market opportunities and building long-term partnerships with key stakeholders across various sectors.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Lead Project Coordinator</div>
+                    <div class="card-company">Aston</div>
+                </div>
+                <div class="card-date">Jan 2026 – Aug 2026</div>
+            </div>
+            <ul>
+                <li>Managed project lifecycles and resource allocation in a high-paced IT outsourcing environment.</li>
+                <li>Ensured delivery met business objectives and profitability targets for key enterprise accounts.</li>
+                <li>Coordinated cross-functional teams, mitigating risks and resolving bottlenecks to maintain project timelines.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Senior Project Coordinator / Resource Manager</div>
+                    <div class="card-company">Aston</div>
+                </div>
+                <div class="card-date">Jan 2023 – Jan 2026</div>
+            </div>
+            <ul>
+                <li><strong>Key Achievement:</strong> Successfully managed the allocation and workload of up to 150 specialists.</li>
+                <li>Supported IT projects generating a monthly revenue of up to $600,000+.</li>
+                <li>Acted as a primary point of contact for enterprise clients, ensuring high satisfaction and contract renewals.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Project Coordinator / Resource Manager</div>
+                    <div class="card-company">Andersen Lab</div>
+                </div>
+                <div class="card-date">Aug 2022 – Feb 2023</div>
+            </div>
+            <p>Coordinated project teams and managed resource allocation within a large-scale IT ecosystem. Facilitated communication between developers, QA, and stakeholders.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Java Developer</div>
+                    <div class="card-company">IT OVERONE</div>
+                </div>
+                <div class="card-date">Sep 2021 – Aug 2022</div>
+            </div>
+            <p>Hands-on software development using Spring Framework. Gained deep technical understanding of software lifecycles and agile methodologies, which now helps in communicating effectively with engineering teams.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Mechanical Engineering & Manufacturing</div>
+                    <div class="card-company">Alutech</div>
+                </div>
+                <div class="card-date">2002 – 2021</div>
+            </div>
+            <p>20 years of experience in mechanical engineering, construction, and production management. Deep understanding of shop floor operations, manufacturing processes, and construction technologies.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">Belarusian National Technical University<br><small style="color:var(--text-muted);">Mechanical Engineering</small></div>
+            <div class="skill-tag">Belarusian State Economic University<br><small style="color:var(--text-muted);">Managerial Economics</small></div>
+            <div class="skill-tag">IT OVERONE<br><small style="color:var(--text-muted);">Java Developer Certificate</small></div>
+            <div class="skill-tag">IPM Business Education<br><small style="color:var(--text-muted);">Professional Manager</small></div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">Digital Transformation</div>
+            <div class="skill-tag">Business Development (B2B)</div>
+            <div class="skill-tag">IT Project Management</div>
+            <div class="skill-tag">Resource Management</div>
+            <div class="skill-tag">Data Analytics / BI</div>
+            <div class="skill-tag">Enterprise Sales</div>
+            <div class="skill-tag">Mechanical Engineering</div>
+            <div class="skill-tag">Construction Tech</div>
+            <div class="skill-tag">English (Advanced)</div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
