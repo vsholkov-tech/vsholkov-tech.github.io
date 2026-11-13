@@ -1,459 +1,1469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Vasiliy Sholkov | Business Development Manager</title>
-    <meta name="description" content="Business Development Manager at A2 Consulting. Helping manufacturing and construction enterprises turn data into profit with DWH, BI, AI/ML, and Digital Twins.">
-    
-    <!-- Open Graph (Для красивого превью в Telegram и LinkedIn) -->
-    <meta property="og:title" content="Vasiliy Sholkov | Turning Data Into Profit">
-    <meta property="og:description" content="Bridging the gap between business, production, and technology. DWH, BI, AI/ML for Manufacturing & Construction.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://a2c.by/wp-content/uploads/2021/12/logo-a2.png"> 
 
-    <link rel="icon" type="image/png" href="https://a2c.by/wp-content/uploads/2021/12/logo-a2.png">
+    <title>Vasiliy Sholkov | Business Development Manager</title>
+    <meta name="description" content="Business Development Manager at A2 Consulting. I help manufacturing, construction and retail enterprises turn data into profit with DWH, BI and AI/ML.">
+    <meta name="author" content="Vasiliy Sholkov">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- ==================================================================
+         Сайт опубликован на GitHub Pages: https://vsholkov-tech.github.io/
+         Абсолютный адрес нужен только для превью в Telegram / LinkedIn / VK:
+         мессенджеры скачивают картинку со своих серверов и относительный
+         путь og-image.jpg не разрешают.
+         При смене домена поправьте 2 строки ниже: og:image и twitter:image.
+         ================================================================== -->
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vasiliy Sholkov">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:title" content="Vasiliy Sholkov | Turning Data Into Profit">
+    <meta property="og:description" content="Bridging the gap between business, production and technology. DWH, BI and AI/ML for Manufacturing, Construction and Retail.">
+    <meta property="og:url" content="https://vsholkov-tech.github.io/">
+    <meta property="og:image" content="https://vsholkov-tech.github.io/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Vasiliy Sholkov — Business Development Manager, A2 Consulting">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vasiliy Sholkov | Turning Data Into Profit">
+    <meta name="twitter:description" content="DWH, BI and AI/ML for Manufacturing, Construction and Retail.">
+    <meta name="twitter:image" content="https://vsholkov-tech.github.io/og-image.jpg">
+    <link rel="canonical" href="https://vsholkov-tech.github.io/">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="preload" as="image" href="photo.png" fetchpriority="high">
+
+    <!-- Язык выставляется ДО отрисовки: иначе видна «вспышка» другого языка.
+         Страница ВСЕГДА открывается на английском. Выбор переключателя
+         действует только на текущий просмотр и нигде не сохраняется:
+         ни в localStorage, ни в адресе. Любое открытие = английский.
+         Русская версия доступна по ссылке с ?lang=ru — это единственный
+         способ открыть страницу сразу на русском. -->
+    <script>
+    (function () {
+        try {
+            var l = new URLSearchParams(location.search).get('lang');
+            l = (l === 'ru' || l === 'en') ? l : 'en';
+            document.documentElement.lang = l;
+            document.documentElement.setAttribute('data-lang', l);
+        } catch (e) { /* оставляем значение по умолчанию из разметки */ }
+    })();
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vasiliy Sholkov",
+      "alternateName": "Василий Шолков",
+      "jobTitle": "Business Development Manager",
+      "worksFor": { "@type": "Organization", "name": "A2 Consulting", "url": "https://a2c.by" },
+      "email": "mailto:v.sholkov@a2c.by",
+      "telephone": "+375293730703",
+      "image": "photo.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/vasiliysholkov/",
+        "https://t.me/SholkovVasiliy"
+      ],
+      "knowsAbout": [
+        "Data Warehousing", "Business Intelligence", "AI/ML", "RPA",
+        "Data Governance", "IT/OT Integration",
+        "Manufacturing Analytics", "Construction Technology", "Retail Analytics"
+      ],
+      "knowsLanguage": ["en", "ru"]
+    }
+    </script>
 
     <style>
         :root {
             --bg-color: #0f172a;
             --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent-color: #3b82f6;
+            --text-muted: #a4b3c8;    /* было #94a3b8 — подняли контраст */
+            --accent-color: #3b82f6;  /* акцент для линий/рамок */
+            --accent-text: #60a5fa;   /* акцент для ТЕКСТА (5.75:1 на карточке) */
+            --accent-hover: #2563eb;
             --card-bg: #1e293b;
-            --border-color: #334155;
+            --border-color: #64748b;  /* карточки отделяются от фона только рамкой (фон к фону 1.22:1),
+                                         поэтому рамка проходит порог 3:1 и к фону, и к карточке */
+            --success-color: #047857; /* было #10b981 — белый текст не проходил AA */
+            --success-hover: #065f46;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        /* Базовая заливка на html, а не на body: так «сияние» ниже гарантированно
+           ложится поверх фона, а не под него (фон body иначе уходит на canvas). */
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-color);
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
+            background-color: transparent;
             color: var(--text-main);
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
+        /* === ФОН: МЯГКОЕ СИЯНИЕ (Aurora) ===
+           Медленно перетекающие цветовые пятна для ощущения глубины.
+           Пиковая непрозрачность 0.20 — намеренно: при большем значении
+           фон светлеет настолько, что --text-muted и акцентный текст
+           уходят ниже порога AA 4.5:1 (проверено расчётом по WCAG).
+           filter: blur() сознательно не используется — размытые градиенты
+           дают тот же эффект, но не стоят GPU-времени на слабых телефонах. */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: -15%;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(42% 42% at 18% 22%, rgba(59, 130, 246, 0.25), transparent 68%),
+                radial-gradient(38% 38% at 80% 58%, rgba(167, 139, 250, 0.20), transparent 68%),
+                radial-gradient(46% 46% at 52% 92%, rgba(56, 189, 248, 0.17), transparent 70%);
+            animation: aurora-drift 30s ease-in-out infinite alternate;
+            will-change: transform;
         }
 
-        /* Header */
+        @keyframes aurora-drift {
+            0%   { transform: translate3d(-3%, -2%, 0) scale(1); }
+            50%  { transform: translate3d(2%, 3%, 0) scale(1.06); }
+            100% { transform: translate3d(4%, -3%, 0) scale(1.04); }
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+        /* === ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКА ===
+           Текст хранится в разметке дважды (EN/RU) и переключается через CSS.
+           Работает без JS, не использует innerHTML и не ломает SEO/скринридеры. */
+        html[data-lang="en"] [data-lang-ru] { display: none; }
+        html[data-lang="ru"] [data-lang-en] { display: none; }
+
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: rgba(30, 41, 59, 0.85);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font: inherit;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: border-color .25s ease, color .25s ease, background-color .25s ease;
+            z-index: 1000;
+        }
+
+        .lang-switch:hover { border-color: var(--accent-color); color: var(--accent-text); background-color: rgba(30, 41, 59, 1); }
+
+        .lang-switch-icon { width: 17px; height: 17px; flex: 0 0 auto; opacity: 0.85; }
+
+        /* === ПЛАВАЮЩАЯ CTA ===
+           Появляется, когда основная кнопка «Записаться» ушла вверх за пределы экрана.
+           Скрыта по умолчанию — включается классом .is-visible из JS. */
+        .sticky-cta {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 999;
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 14px 22px;
+            border-radius: 50px;
+            background-color: var(--success-color);
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            box-shadow: 0 6px 22px rgba(4, 120, 87, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(14px);
+            transition: opacity .3s ease, transform .3s ease, visibility .3s, background-color .25s ease;
+        }
+
+        .sticky-cta.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+        .sticky-cta:hover { background-color: var(--success-hover); }
+
+        .sticky-cta svg { width: 19px; height: 19px; flex: 0 0 auto; }
+
+        a:focus-visible, button:focus-visible {
+            outline: 3px solid var(--accent-text);
+            outline-offset: 3px;
+            border-radius: 6px;
+        }
+
+        /* === HERO === */
         header {
-            text-align: center;
-            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            margin-bottom: 50px;
+            padding-top: 20px;
         }
+
+        .hero-image { flex: 0 0 320px; }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 2 / 3;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.2);
+            border: 2px solid rgba(59, 130, 246, 0.3);
+            display: block;
+        }
+
+        .hero-content { flex: 1; text-align: left; }
 
         h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: -0.02em;
+            font-size: clamp(2rem, 6vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 5px;
+            letter-spacing: -0.03em;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #60a5fa; /* фолбэк, если градиентный текст не поддержан */
         }
 
-        .headline {
+        .job-title {
             font-size: 1.2rem;
-            color: var(--accent-color);
-            font-weight: 500;
-            margin-bottom: 20px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .contact-links a {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 6px;
+            color: var(--accent-text);
             font-weight: 600;
-            margin: 5px;
-            transition: background 0.3s ease;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
         }
 
-        .contact-links a:hover {
-            background-color: #2563eb;
+        .headline { font-size: 1.3rem; color: var(--text-muted); font-weight: 500; margin-bottom: 30px; }
+
+        .cta-group { display: flex; justify-content: flex-start; gap: 15px; flex-wrap: wrap; }
+
+        .btn-primary, .btn-secondary {
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: background-color .25s ease, transform .25s ease, border-color .25s ease;
         }
 
-        .contact-links a.secondary {
-            background-color: transparent;
-            border: 1px solid var(--accent-color);
-            color: var(--accent-color);
+        .btn-primary {
+            background-color: var(--success-color);
+            color: #fff;
+            font-weight: 700;
+            box-shadow: 0 4px 14px rgba(4, 120, 87, 0.45);
         }
 
-        .contact-links a.secondary:hover {
+        .btn-primary:hover { background-color: var(--success-hover); transform: translateY(-2px); }
+
+        .btn-secondary { background-color: transparent; border: 1px solid var(--border-color); color: var(--text-main); font-weight: 600; }
+        .btn-secondary:hover { background-color: var(--card-bg); border-color: var(--accent-color); }
+
+        /* Trust Bar */
+        .trust-bar {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 70px;
+            padding: 30px 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .trust-text {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .logos-container { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 50px; }
+
+        /* Группы логотипов: текущий работодатель / прежние.
+           Разделение принципиально — иначе читатель принимает всех за клиентов. */
+        .logo-groups {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 0 55px;
+        }
+
+        .logo-group { text-align: center; }
+
+        .logo-group-label {
+            font-size: 0.72rem;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .logo-group .logos-container { gap: 34px; }
+
+        /* Разделитель между группами — только когда группы стоят в один ряд */
+        .logo-group + .logo-group {
+            border-left: 1px solid var(--border-color);
+            padding-left: 55px;
+        }
+
+        /* Логотипы: обесцвечиваем, но НЕ осветляем.
+           brightness() здесь вреден — он «съедает» внутренний контраст
+           между знаком и фоном логотипа (напр. белое «ASTON.» на тёмном круге). */
+        .logos-container img {
+            max-height: 52px;
+            max-width: 150px;
+            width: auto;
+            object-fit: contain;
+            filter: grayscale(1) opacity(0.75);
+            transition: filter .3s ease, transform .3s ease;
+        }
+
+        /* Aston — тёмно-синий круг на тёмном фоне: сам круг сливается с фоном
+           (1.7:1), хотя белое «ASTON.» внутри читается. Даём ему подсветку,
+           чтобы был виден контур, а не «пятно». */
+        .logos-container img.logo-boost { filter: grayscale(1) brightness(1.9) opacity(0.9); }
+
+        .logos-container img:hover { filter: grayscale(0) opacity(1); transform: scale(1.06); }
+        .logos-container img.logo-boost:hover { filter: grayscale(0) brightness(1.15) opacity(1); }
+
+        section { margin-bottom: 60px; }
+
+        h2 { font-size: 1.8rem; margin-bottom: 25px; color: var(--text-main); display: flex; align-items: center; gap: 10px; }
+
+        /* About */
+        .about-container { max-width: 850px; margin: 0 auto; }
+        .about-text p { margin-bottom: 15px; font-size: 1.05rem; color: var(--text-muted); }
+        .about-text strong { color: var(--text-main); }
+
+        .highlight-box {
             background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 25px;
         }
 
-        /* QR Code Section */
-        .contact-card {
+        /* Impact */
+        .impact-section {
+            background: linear-gradient(135deg, var(--card-bg) 0%, #171e2e 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+
+        .impact-title { text-align: center; font-size: 1.5rem; margin-bottom: 30px; color: var(--text-main); }
+
+        .impact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+        .impact-item {
+            text-align: center;
+            padding: 30px 20px 20px;
+            background-color: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+        }
+
+        .impact-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 0 0 3px 3px;
+        }
+
+        .impact-item h4 {
+            color: var(--text-main);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .impact-item p { font-size: 0.95rem; color: var(--text-muted); }
+        .impact-item strong { color: #6ee7b7; }
+
+        .impact-clients {
+            margin-top: 28px;
+            padding-top: 22px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+        }
+
+        .impact-clients a { color: var(--accent-text); text-decoration: none; font-weight: 600; }
+        .impact-clients a:hover { text-decoration: underline; }
+
+        /* Key Facts */
+        .facts-section { margin-bottom: 60px; }
+
+        .facts-title { justify-content: center; text-align: center; font-size: 1.5rem; margin-bottom: 30px; }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .fact-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 26px 20px;
+            text-align: center;
+            transition: border-color .3s ease, transform .3s ease;
+        }
+
+        .fact-item:hover { border-color: var(--accent-color); transform: translateY(-4px); }
+
+        .fact-number {
+            font-size: 2.6rem;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #60a5fa; /* фолбэк без градиента */
+            margin-bottom: 10px;
+        }
+
+        .fact-label { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; }
+
+        .facts-source {
+            margin-top: 18px;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            opacity: 0.85;
+        }
+
+        .facts-source a { color: var(--accent-text); text-decoration: none; font-weight: 600; }
+        .facts-source a:hover { text-decoration: underline; }
+
+        /* Services */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            transition: transform .3s ease, border-color .3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover { transform: translateY(-5px); border-color: var(--accent-color); }
+
+        .service-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .service-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; color: var(--text-main); }
+        .service-desc { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 15px; flex-grow: 1; }
+
+        .service-list { list-style: none; padding: 15px 0 0; margin: 0; border-top: 1px solid rgba(255, 255, 255, 0.12); }
+        .service-list li { position: relative; padding-left: 25px; margin-bottom: 8px; font-size: 0.9rem; color: var(--text-main); }
+
+        /* Галочки в списках услуг — символ вместо эмодзи: «✔» рисуется как
+           текстовый глиф и наследует цвет, оставаясь одинаковым во всех ОС. */
+        .service-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #34d399;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        /* Process */
+        .process-section { margin-bottom: 60px; }
+
+        .process-intro {
+            max-width: 720px;
+            margin: 0 auto 35px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.02rem;
+        }
+
+        .process-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+            counter-reset: step;
+            position: relative;
+        }
+
+        .process-step {
+            position: relative;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px 22px 24px;
+            transition: border-color .3s ease, transform .3s ease;
+        }
+
+        .process-step:hover { border-color: var(--accent-color); transform: translateY(-4px); }
+
+        /* Соединительная линия между шагами — только на широких экранах */
+        .process-step::after {
+            content: '';
+            position: absolute;
+            top: 52px;
+            right: -22px;
+            width: 22px;
+            height: 2px;
+            background-color: var(--border-color);
+        }
+
+        .process-step:last-child::after { display: none; }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-text);
+            font-weight: 800;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .step-title { font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin-bottom: 8px; }
+        .step-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
+
+        /* Experience — таймлайн */
+        .exp-list { list-style: none; position: relative; padding-left: 26px; }
+
+        /* Вертикальная линия таймлайна */
+        .exp-list::before {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background-color: var(--border-color);
+        }
+
+        .exp-item { position: relative; padding-bottom: 26px; }
+        .exp-item:last-child { padding-bottom: 0; }
+
+        /* Точка на линии */
+        .exp-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 7px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            border: 2px solid var(--bg-color);
+        }
+
+        .exp-item.is-current::before { background-color: var(--success-color); }
+
+        .exp-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .exp-role { font-size: 1.05rem; font-weight: 700; color: var(--text-main); }
+
+        .exp-date {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+
+        .exp-company { font-size: 0.95rem; color: var(--accent-text); font-weight: 600; margin-bottom: 4px; }
+        .exp-company a { color: inherit; text-decoration: none; }
+        .exp-company a:hover { text-decoration: underline; }
+
+        .exp-note { font-size: 0.92rem; color: var(--text-muted); }
+        .exp-note strong { color: var(--text-main); }
+
+        /* Education / competencies */
+        .tags-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            gap: 14px;
+            list-style: none;
+        }
+
+        .tag-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px 18px;
+            transition: border-color .3s ease;
+        }
+
+        .tag-card:hover { border-color: var(--accent-color); }
+
+        .tag-title { font-size: 0.95rem; font-weight: 600; color: var(--text-main); }
+        .tag-sub { font-size: 0.85rem; color: var(--text-muted); margin-top: 3px; }
+
+        .tags-simple .tag-card { text-align: center; font-size: 0.92rem; color: var(--text-main); font-weight: 500; }
+
+        /* Contact */
+        .contact-section {
             display: flex;
             align-items: center;
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 12px;
-            padding: 25px;
-            margin: 30px auto 50px auto;
-            max-width: 650px;
-            gap: 30px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            gap: 40px;
+            margin-top: 60px;
         }
 
-        .qr-code-container {
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            display: inline-block;
-        }
+        .qr-code-container { background: #fff; padding: 15px; border-radius: 12px; display: inline-block; flex: 0 0 auto; }
+        .qr-code-container img { display: block; width: 180px; height: 180px; }
 
-        .qr-code-container img {
-            display: block;
-            width: 140px;
-            height: 140px;
-        }
+        .contact-details { flex: 1; }
+        .contact-details h3 { font-size: 1.5rem; margin-bottom: 15px; }
+        .contact-details p { color: var(--text-muted); margin-bottom: 8px; font-size: 1.1rem; }
+        .contact-details a { color: var(--accent-text); text-decoration: none; font-weight: 600; }
+        .contact-details a:hover { text-decoration: underline; }
 
-        .contact-details {
-            text-align: left;
-            flex: 1;
-        }
-
-        .contact-details strong {
-            color: var(--text-main);
-            font-size: 1.1rem;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .contact-details p {
-            color: var(--text-muted);
-            margin-bottom: 4px;
-            font-size: 0.95rem;
-        }
-
-        .contact-details a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        .contact-details a:hover {
-            text-decoration: underline;
-        }
-
-        /* Sections */
-        section {
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--border-color);
-            color: var(--text-main);
-        }
-
-        /* About */
-        .about-text {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-        }
-
-        .about-text strong {
-            color: var(--text-main);
-        }
-
-        .highlights {
-            list-style: none;
-            margin-top: 20px;
-        }
-
-        .highlights li {
-            margin-bottom: 15px;
-            position: relative;
-            padding-left: 25px;
-        }
-
-        .highlights li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-
-        /* Cards (Experience & Education) */
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-2px);
-            border-color: var(--accent-color);
-        }
-
-        .card-header {
+        .contact-line {
             display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
+            align-items: center;
+            gap: 11px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
         }
 
-        .card-title {
-            font-size: 1.2rem;
-            font-weight: 600;
+        /* Иконки контактов — инлайновые SVG в стиле Feather, а не эмодзи:
+           эмодзи рисуются по-разному в Windows, macOS и Android и выглядят
+           «игрушечно». SVG наследует цвет и одинаков везде. */
+        .contact-icon {
+            width: 19px;
+            height: 19px;
+            flex: 0 0 auto;
+            color: var(--accent-color); /* чуть глубже акцента для текста — иконка не «кричит» */
+            opacity: 0.9;
+        }
+
+        .save-contact {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: 1px solid var(--accent-color);
+            background: transparent;
             color: var(--text-main);
+            font: inherit;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color .25s ease;
         }
 
-        .card-company {
-            font-size: 1rem;
-            color: var(--accent-color);
-            font-weight: 500;
-        }
-        
-        .card-company a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-        
-        .card-company a:hover {
-            text-decoration: underline;
-        }
+        .save-contact:hover { background-color: rgba(59, 130, 246, 0.15); }
 
-        .card-date {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            font-weight: 400;
-        }
+        .contact-note { font-size: 0.9rem; color: var(--text-muted); margin-top: 14px; }
 
-        .card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-top: 10px;
-        }
-
-        .card ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-top: 10px;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .card ul li {
-            margin-bottom: 5px;
-        }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .skill-tag {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 10px 15px;
-            border-radius: 6px;
+        footer {
             text-align: center;
-            font-size: 0.95rem;
-            font-weight: 500;
+            padding: 30px 20px 50px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
         }
 
-        @media (max-width: 600px) {
-            .card-header {
-                flex-direction: column;
+        footer a { color: var(--accent-text); text-decoration: none; font-weight: 600; }
+        footer a:hover { text-decoration: underline; }
+
+        .footer-slogan { margin-top: 6px; font-size: 0.85rem; opacity: 0.8; }
+
+        /* === Адаптив === */
+        @media (max-width: 850px) {
+            header { flex-direction: column; text-align: center; gap: 30px; }
+            .hero-content { text-align: center; }
+            .cta-group { justify-content: center; }
+            .hero-image { flex: 0 0 auto; width: min(260px, 70vw); }
+            .contact-section { flex-direction: column; text-align: center; padding: 30px 20px; }
+            /* На мобильных контакты центрируются — иконки тоже */
+            .contact-line { justify-content: center; }
+            .qr-code-container { display: none; } /* на телефоне QR бесполезен — есть кнопка vCard */
+            .logos-container { gap: 28px; }
+            .logos-container img { max-height: 44px; max-width: 120px; }
+            /* Группы встают друг под друга — вертикальный разделитель меняем на горизонтальный */
+            .logo-groups { flex-direction: column; gap: 34px; }
+            .logo-group + .logo-group {
+                border-left: none;
+                border-top: 1px solid var(--border-color);
+                padding-left: 0;
+                padding-top: 30px;
+                width: min(100%, 420px);
+                margin: 0 auto;
             }
-            .card-date {
-                margin-top: 5px;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            .contact-card {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
-            .contact-details {
-                text-align: center;
-            }
+            .impact-grid { grid-template-columns: 1fr; }
+            .impact-section { padding: 30px 20px; }
+            .contact-note { display: none; }
+            .lang-switch { top: 10px; right: 10px; padding: 6px 12px; }
+            /* На мобильных кнопка компактнее и не перекрывает контент */
+            .sticky-cta { right: 14px; bottom: 14px; padding: 12px 18px; font-size: 0.92rem; }
+        }
+
+        @media (max-width: 900px) {
+            /* Шаги встают в 2 колонки — горизонтальные соединители больше не нужны */
+            .process-list { grid-template-columns: repeat(2, 1fr); }
+            .process-step::after { display: none; }
+        }
+
+        @media (max-width: 700px) {
+            .facts-grid { grid-template-columns: repeat(2, 1fr); }
+            .fact-number { font-size: 2.1rem; }
+        }
+
+        @media (min-width: 851px) and (max-width: 1000px) {
+            .impact-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 560px) {
+            .container { padding: 60px 16px 24px; } /* отступ сверху под кнопку языка */
+            .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+            h2 { font-size: 1.5rem; }
+            .process-list { grid-template-columns: 1fr; }
+            /* Должность и даты встают друг под друга, даты — под должностью */
+            .exp-head { flex-direction: column; gap: 2px; }
+            .exp-list { padding-left: 22px; }
+            .exp-item::before { left: -22px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { transition: none !important; animation: none !important; }
+            html { scroll-behavior: auto; }
+            .service-card:hover, .btn-primary:hover, .logos-container img:hover,
+            .fact-item:hover, .process-step:hover { transform: none; }
+            /* Сияние остаётся, но замирает — фон не перестаёт быть «живым» */
+            body::before { animation: none; transform: none; }
+        }
+
+        @media print {
+            :root { --bg-color: #fff; --card-bg: #fff; --text-main: #111; --text-muted: #444; --border-color: #ccc; }
+            html, body { background: #fff; color: #111; }
+            body::before { display: none; } /* сияние на печати = грязь на бумаге */
+            .cta-group, .qr-code-container, .save-contact, .lang-switch, .sticky-cta { display: none !important; }
+            .impact-section { background: #fff; }
+            .logos-container img { filter: grayscale(1) brightness(0.4); }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<button type="button" class="lang-switch" id="langBtn" aria-label="Switch language to Russian">
+    <svg class="lang-switch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="M3 12h18"></path>
+        <path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"></path>
+    </svg>
+    <span id="langBtnLabel">RU</span>
+</button>
+
+<!-- Плавающая CTA: показывается, когда основная кнопка уходит за верх экрана -->
+<a class="sticky-cta" id="stickyCta" href="https://calendly.com/vasiliy-sholkov/30min" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+         stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+        <line x1="16" y1="2" x2="16" y2="6"></line>
+        <line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line>
+    </svg>
+    <span data-lang-en>Book a Call</span>
+    <span data-lang-ru lang="ru">Записаться</span>
+</a>
+
+<main class="container">
+    <!-- Hero -->
     <header>
-        <h1>Vasiliy Sholkov</h1>
-        <div class="headline">
-            Business Development Manager | Digital Transformation & Data Analytics (DWH, BI, AI/ML) for Manufacturing & Construction
+        <div class="hero-image">
+            <img src="photo.png" alt="Vasiliy Sholkov, Business Development Manager at A2 Consulting"
+                 width="408" height="612" fetchpriority="high">
         </div>
-        <div class="contact-links">
-            <!-- ССЫЛКА НА LINKEDIN ОБНОВЛЕНА. Если она не работает, замените её на ссылку из адресной строки вашего профиля. -->
-            <a href="https://www.linkedin.com/in/vasiliy-sholkov-5b96b721b/" target="_blank">LinkedIn</a>
-            
-            <a href="https://t.me/SholkovVasiliy" target="_blank" class="secondary">Telegram</a>
-            <a href="mailto:v.sholkov@a2c.by" class="secondary">Email</a>
+        <div class="hero-content">
+            <h1>
+                <span data-lang-en>Vasiliy Sholkov</span>
+                <span data-lang-ru lang="ru">Василий Шолков</span>
+            </h1>
+
+            <p class="job-title">
+                <span data-lang-en>Business Development Manager | A2 Consulting</span>
+                <span data-lang-ru lang="ru">Менеджер по развитию бизнеса | A2 Consulting</span>
+            </p>
+
+            <p class="headline">
+                <span data-lang-en>I help industrial, construction and retail enterprises turn complex data into profit — DWH, BI and AI/ML.</span>
+                <span data-lang-ru lang="ru">Помогаю предприятиям промышленности, строительства и ритейла превращать сложные данные в прибыль — DWH, BI и AI/ML.</span>
+            </p>
+
+            <div class="cta-group">
+                <a class="btn-primary" href="https://calendly.com/vasiliy-sholkov/30min" target="_blank" rel="noopener noreferrer">
+                    <span data-lang-en>Book a Strategy Call</span>
+                    <span data-lang-ru lang="ru">Записаться на консультацию</span>
+                </a>
+                <a class="btn-secondary" href="https://www.linkedin.com/in/vasiliysholkov/" target="_blank" rel="noopener noreferrer">
+                    <span data-lang-en>View LinkedIn</span>
+                    <span data-lang-ru lang="ru">Профиль LinkedIn</span>
+                </a>
+            </div>
         </div>
     </header>
 
-    <div class="contact-card">
+    <!-- Trust Bar -->
+    <section class="trust-bar" aria-labelledby="trust-heading">
+        <h2 id="trust-heading" class="trust-text">
+            <span data-lang-en>Where I Have Worked</span>
+            <span data-lang-ru lang="ru">Где я работал</span>
+        </h2>
+
+        <div class="logo-groups">
+            <div class="logo-group">
+                <div class="logo-group-label">
+                    <span data-lang-en>Current</span>
+                    <span data-lang-ru lang="ru">Сейчас</span>
+                </div>
+                <div class="logos-container">
+                    <img src="a2.png" alt="A2 Consulting — current employer" width="1858" height="672" loading="lazy" decoding="async">
+                </div>
+            </div>
+
+            <div class="logo-group">
+                <div class="logo-group-label">
+                    <span data-lang-en>Previously</span>
+                    <span data-lang-ru lang="ru">Ранее</span>
+                </div>
+                <div class="logos-container">
+                    <img src="alutech.png"  alt="Alutech — previous employer"  width="400" height="400" loading="lazy" decoding="async">
+                    <img src="andersen.png" alt="Andersen — previous employer" width="640" height="480" loading="lazy" decoding="async">
+                    <img src="Aston.png"    alt="Aston — previous employer"    width="424" height="424" loading="lazy" decoding="async" class="logo-boost">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">
+            <span data-lang-en>The Challenge &amp; The Solution</span>
+            <span data-lang-ru lang="ru">Задача и решение</span>
+        </h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p data-lang-en><strong>The Problem:</strong> Industrial, construction and retail companies are drowning in data but starving for actionable insights. IT teams build complex systems that engineers on the shop floor simply don't use.</p>
+                <p data-lang-ru lang="ru"><strong>Проблема:</strong> Компании в промышленности, строительстве и ритейле тонут в данных, но испытывают нехватку полезной информации. IT-команды создают сложные системы, которыми инженеры на местах просто не пользуются.</p>
+
+                <p data-lang-en><strong>The Solution:</strong> I bridge the gap between business, production and technology. I speak both languages: the language of mechanical engineering and the language of Data Warehouses.</p>
+                <p data-lang-ru lang="ru"><strong>Решение:</strong> Я соединяю бизнес, производство и технологии. Говорю на обоих языках: языке машиностроения и языке хранилищ данных.</p>
+
+                <div class="highlight-box">
+                    <p data-lang-en><strong>Why Me?</strong> A unique combination of 20 years in industrial engineering, a degree in economics and hands-on experience as a Java developer. I don't just sell IT services — I understand the bottom line.</p>
+                    <p data-lang-ru lang="ru"><strong>Почему я?</strong> Уникальное сочетание: 20 лет в промышленной инженерии, экономическое образование и опыт разработки на Java. Я не просто продаю IT-услуги — я понимаю экономику бизнеса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="impact-section" aria-labelledby="impact-heading">
+        <h2 id="impact-heading" class="impact-title">
+            <span data-lang-en>Recent Impact</span>
+            <span data-lang-ru lang="ru">Последний кейс</span>
+        </h2>
+        <div class="impact-grid">
+            <div class="impact-item">
+                <h4 data-lang-en>The Challenge</h4>
+                <h4 data-lang-ru lang="ru">Задача</h4>
+                <p data-lang-en>A manufacturing plant was drowning in raw production data. Generating reports took days, and managers had no real-time visibility.</p>
+                <p data-lang-ru lang="ru">Завод тонул в необработанных производственных данных. На подготовку отчётов уходили дни, а у руководителей не было картины в реальном времени.</p>
+            </div>
+            <div class="impact-item">
+                <h4 data-lang-en>My Action</h4>
+                <h4 data-lang-ru lang="ru">Что сделал</h4>
+                <p data-lang-en>Implemented a centralized Data Warehouse (DWH) and Qlik BI dashboards, connecting shop-floor sensors with executive KPIs.</p>
+                <p data-lang-ru lang="ru">Внедрил централизованное хранилище данных (DWH) и дашборды Qlik BI, связав данные с цеха с KPI руководства.</p>
+            </div>
+            <div class="impact-item">
+                <h4 data-lang-en>The Result</h4>
+                <h4 data-lang-ru lang="ru">Результат</h4>
+                <p data-lang-en>Reduced reporting time by <strong>80%</strong>, provided real-time OEE visibility and saved thousands of man-hours annually.</p>
+                <p data-lang-ru lang="ru">Сократил время подготовки отчётности на <strong>80%</strong>, обеспечил видимость OEE в реальном времени и сэкономил тысячи человеко-часов в год.</p>
+            </div>
+        </div>
+
+        <!-- Публичная клиентская база A2 Consulting — проверяемый факт, а не личный кейс -->
+        <p class="impact-clients">
+            <span data-lang-en>As part of A2 Consulting, I work with projects for companies such as</span>
+            <span data-lang-ru lang="ru">В составе A2 Consulting я работаю с проектами для компаний, среди которых</span>
+            <a href="https://a2c.by/company/brands/" target="_blank" rel="noopener noreferrer">Белоруснефть, Санта Бремор, Евроопт, ГУМ, ЦУМ, МТС, Сбер Банк</a>
+            <span data-lang-en>and other market leaders in Belarus and the CIS.</span>
+            <span data-lang-ru lang="ru">и другие лидеры рынка Беларуси и СНГ.</span>
+        </p>
+    </section>
+
+    <!-- Key Facts -->
+    <section class="facts-section" aria-labelledby="facts-heading">
+        <h2 id="facts-heading" class="facts-title">
+            <span data-lang-en>Key Facts</span>
+            <span data-lang-ru lang="ru">Ключевые факты</span>
+        </h2>
+        <div class="facts-grid">
+            <div class="fact-item">
+                <div class="fact-number">20</div>
+                <div class="fact-label">
+                    <span data-lang-en>years in industrial engineering — I understand production from the inside</span>
+                    <span data-lang-ru lang="ru">лет в промышленной инженерии — понимаю производство изнутри</span>
+                </div>
+            </div>
+            <div class="fact-item">
+                <div class="fact-number">96</div>
+                <div class="fact-label">
+                    <span data-lang-en>companies in the client portfolio of A2 Consulting</span>
+                    <span data-lang-ru lang="ru">компаний в клиентском портфеле A2 Consulting</span>
+                </div>
+            </div>
+            <div class="fact-item">
+                <div class="fact-number">31</div>
+                <div class="fact-label">
+                    <span data-lang-en>technology partners: Qlik, Power BI, Tableau, ClickHouse and more</span>
+                    <span data-lang-ru lang="ru">технологический партнёр: Qlik, Power BI, Tableau, ClickHouse и другие</span>
+                </div>
+            </div>
+            <div class="fact-item">
+                <div class="fact-number">2</div>
+                <div class="fact-label">
+                    <span data-lang-en>languages I speak fluently — engineering and data. Most vendors speak only one</span>
+                    <span data-lang-ru lang="ru">языка, на которых говорю свободно — инженерия и данные. Большинство вендоров знают один</span>
+                </div>
+            </div>
+        </div>
+        <p class="facts-source">
+            <span data-lang-en>Portfolio and partner figures are taken from the public lists on</span>
+            <span data-lang-ru lang="ru">Цифры по портфелю и партнёрам взяты из публичных списков на</span>
+            <a href="https://a2c.by/company/brands/" target="_blank" rel="noopener noreferrer">a2c.by/company/brands</a>
+            <span data-lang-en>and</span><span data-lang-ru lang="ru">и</span>
+            <a href="https://a2c.by/company/partners/" target="_blank" rel="noopener noreferrer">a2c.by/company/partners</a>
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" aria-labelledby="services-heading">
+        <h2 id="services-heading">
+            <span data-lang-en>How I Can Help You</span>
+            <span data-lang-ru lang="ru">Чем я могу помочь</span>
+        </h2>
+        <div class="services-grid">
+
+            <article class="service-card">
+                <img class="service-img" src="DataStrategy.webp" alt="Live production dashboards replacing spreadsheet reporting"
+                     width="560" height="390" loading="lazy" decoding="async">
+                <h3 class="service-title">
+                    <span data-lang-en>From Factory Data to Live Dashboards</span>
+                    <span data-lang-ru lang="ru">От данных завода — к живым дашбордам</span>
+                </h3>
+                <p class="service-desc">
+                    <span data-lang-en>One source of truth instead of a dozen spreadsheets — reports ready by morning, not by Friday.</span>
+                    <span data-lang-ru lang="ru">Один источник правды вместо десятка таблиц — отчёт готов утром, а не к пятнице.</span>
+                </p>
+                <ul class="service-list">
+                    <li data-lang-en>Real-time KPI tracking</li>
+                    <li data-lang-ru lang="ru">Отслеживание KPI в реальном времени</li>
+                    <li data-lang-en>Automated reporting (save hours)</li>
+                    <li data-lang-ru lang="ru">Автоматизация отчётности</li>
+                    <li data-lang-en>Single source of truth</li>
+                    <li data-lang-ru lang="ru">Единый источник достоверных данных</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <img class="service-img" src="Digital.webp" alt="Connected systems and process automation concept"
+                     width="560" height="374" loading="lazy" decoding="async">
+                <h3 class="service-title">
+                    <span data-lang-en>Automating the Routine, Predicting the Rest</span>
+                    <span data-lang-ru lang="ru">Автоматизирую рутину, прогнозирую остальное</span>
+                </h3>
+                <p class="service-desc">
+                    <span data-lang-en>RPA takes over repetitive work; AI/ML models flag problems before they cost money.</span>
+                    <span data-lang-ru lang="ru">RPA забирает рутинные операции, AI/ML-модели подсказывают о проблемах до того, как они стоят денег.</span>
+                </p>
+                <ul class="service-list">
+                    <li data-lang-en>RPA and process automation</li>
+                    <li data-lang-ru lang="ru">RPA и роботизация процессов</li>
+                    <li data-lang-en>AI/ML models for production</li>
+                    <li data-lang-ru lang="ru">AI/ML-модели для производства</li>
+                    <li data-lang-en>IT &amp; OT seamless integration</li>
+                    <li data-lang-ru lang="ru">Бесшовная интеграция IT и OT</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <img class="service-img" src="B2B.webp" alt="Independent IT investment and vendor selection"
+                     width="560" height="367" loading="lazy" decoding="async">
+                <h3 class="service-title">
+                    <span data-lang-en>IT Decisions Without Costly Mistakes</span>
+                    <span data-lang-ru lang="ru">IT-решения без дорогих ошибок</span>
+                </h3>
+                <p class="service-desc">
+                    <span data-lang-en>An independent view on vendors, budget and roadmap — before you commit.</span>
+                    <span data-lang-ru lang="ru">Независимый взгляд на вендоров, бюджет и дорожную карту — до того, как вы взяли обязательства.</span>
+                </p>
+                <ul class="service-list">
+                    <li data-lang-en>Unbiased vendor selection</li>
+                    <li data-lang-ru lang="ru">Независимый выбор вендоров</li>
+                    <li data-lang-en>Risk &amp; ROI calculation</li>
+                    <li data-lang-ru lang="ru">Оценка рисков и ROI</li>
+                    <li data-lang-en>Project roadmap &amp; strategy</li>
+                    <li data-lang-ru lang="ru">Дорожная карта проекта</li>
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="process-section" aria-labelledby="process-heading">
+        <h2 id="process-heading">
+            <span data-lang-en>How I Work</span>
+            <span data-lang-ru lang="ru">Как я работаю</span>
+        </h2>
+        <p class="process-intro">
+            <span data-lang-en>A predictable path from first call to a working solution — no surprises, no runaway scope.</span>
+            <span data-lang-ru lang="ru">Предсказуемый путь от первого звонка до работающего решения — без сюрпризов и расползания сроков.</span>
+        </p>
+
+        <ol class="process-list">
+            <li class="process-step">
+                <div class="step-number" aria-hidden="true">1</div>
+                <h3 class="step-title">
+                    <span data-lang-en>Discovery Call</span>
+                    <span data-lang-ru lang="ru">Знакомство</span>
+                </h3>
+                <p class="step-desc">
+                    <span data-lang-en>30 minutes. We discuss your data, your bottleneck and what a win looks like. No obligation.</span>
+                    <span data-lang-ru lang="ru">30 минут. Обсуждаем ваши данные, узкое место и что считать результатом. Без обязательств.</span>
+                </p>
+            </li>
+
+            <li class="process-step">
+                <div class="step-number" aria-hidden="true">2</div>
+                <h3 class="step-title">
+                    <span data-lang-en>Audit &amp; Strategy</span>
+                    <span data-lang-ru lang="ru">Аудит и стратегия</span>
+                </h3>
+                <p class="step-desc">
+                    <span data-lang-en>We assess data sources and reporting. You get a roadmap with scope, timeline and expected ROI.</span>
+                    <span data-lang-ru lang="ru">Оцениваем источники данных и отчётность. Вы получаете дорожную карту со сроками, объёмом и ожидаемым ROI.</span>
+                </p>
+            </li>
+
+            <li class="process-step">
+                <div class="step-number" aria-hidden="true">3</div>
+                <h3 class="step-title">
+                    <span data-lang-en>Implementation</span>
+                    <span data-lang-ru lang="ru">Внедрение</span>
+                </h3>
+                <p class="step-desc">
+                    <span data-lang-en>The project team builds the DWH, dashboards or AI models. You see progress in short iterations.</span>
+                    <span data-lang-ru lang="ru">Команда проекта собирает DWH, дашборды или AI-модели. Прогресс виден короткими итерациями.</span>
+                </p>
+            </li>
+
+            <li class="process-step">
+                <div class="step-number" aria-hidden="true">4</div>
+                <h3 class="step-title">
+                    <span data-lang-en>Support &amp; Growth</span>
+                    <span data-lang-ru lang="ru">Поддержка и развитие</span>
+                </h3>
+                <p class="step-desc">
+                    <span data-lang-en>We keep the solution running and extend it as your questions get harder.</span>
+                    <span data-lang-ru lang="ru">Поддерживаем решение и развиваем его по мере усложнения задач.</span>
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="exp-section" aria-labelledby="exp-heading">
+        <h2 id="exp-heading">
+            <span data-lang-en>Experience</span>
+            <span data-lang-ru lang="ru">Опыт работы</span>
+        </h2>
+
+        <ol class="exp-list">
+            <li class="exp-item is-current">
+                <div class="exp-head">
+                    <span class="exp-role">
+                        <span data-lang-en>Business Development Manager</span>
+                        <span data-lang-ru lang="ru">Менеджер по развитию бизнеса</span>
+                    </span>
+                    <span class="exp-date">2026 — <span data-lang-en>Present</span><span data-lang-ru lang="ru">наст. время</span></span>
+                </div>
+                <div class="exp-company"><a href="https://a2c.by/" target="_blank" rel="noopener noreferrer">A2 Consulting</a></div>
+                <p class="exp-note">
+                    <span data-lang-en>B2B sales of data management, BI and AI/ML solutions for enterprise clients in manufacturing, construction, retail and fintech.</span>
+                    <span data-lang-ru lang="ru">B2B-продажи решений по управлению данными, BI и AI/ML для крупных заказчиков в промышленности, строительстве, ритейле и финтехе.</span>
+                </p>
+            </li>
+
+            <li class="exp-item">
+                <div class="exp-head">
+                    <span class="exp-role">
+                        <span data-lang-en>Lead Project Coordinator</span>
+                        <span data-lang-ru lang="ru">Ведущий координатор проектов</span>
+                    </span>
+                    <span class="exp-date">2026</span>
+                </div>
+                <div class="exp-company">Aston</div>
+                <p class="exp-note">
+                    <span data-lang-en>Managed project lifecycles and resource allocation; ensured delivery met profitability targets for key enterprise accounts.</span>
+                    <span data-lang-ru lang="ru">Управлял жизненным циклом проектов и распределением ресурсов; отвечал за выполнение целей по прибыльности ключевых заказчиков.</span>
+                </p>
+            </li>
+
+            <li class="exp-item">
+                <div class="exp-head">
+                    <span class="exp-role">
+                        <span data-lang-en>Senior Project Coordinator / Resource Manager</span>
+                        <span data-lang-ru lang="ru">Старший координатор проектов / ресурсный менеджер</span>
+                    </span>
+                    <span class="exp-date">2023 — 2026</span>
+                </div>
+                <div class="exp-company">Aston</div>
+                <p class="exp-note">
+                    <span data-lang-en><strong>Key achievement:</strong> managed allocation and workload of up to 150 specialists; supported IT projects with monthly revenue of $600,000+.</span>
+                    <span data-lang-ru lang="ru"><strong>Ключевое достижение:</strong> управлял загрузкой до 150 специалистов; обеспечивал IT-проекты с месячной выручкой $600 000+.</span>
+                </p>
+            </li>
+
+            <li class="exp-item">
+                <div class="exp-head">
+                    <span class="exp-role">
+                        <span data-lang-en>Project Coordinator / Resource Manager</span>
+                        <span data-lang-ru lang="ru">Координатор проектов / ресурсный менеджер</span>
+                    </span>
+                    <span class="exp-date">2022 — 2023</span>
+                </div>
+                <div class="exp-company">Andersen Lab</div>
+                <p class="exp-note">
+                    <span data-lang-en>Coordinated project teams and resource allocation within a large-scale IT ecosystem.</span>
+                    <span data-lang-ru lang="ru">Координировал проектные команды и распределение ресурсов в крупной IT-экосистеме.</span>
+                </p>
+            </li>
+
+            <li class="exp-item">
+                <div class="exp-head">
+                    <span class="exp-role">
+                        <span data-lang-en>Java Developer</span>
+                        <span data-lang-ru lang="ru">Java-разработчик</span>
+                    </span>
+                    <span class="exp-date">2021 — 2022</span>
+                </div>
+                <div class="exp-company">IT OVERONE</div>
+                <p class="exp-note">
+                    <span data-lang-en>Software development with the Spring Framework — the technical grounding that now helps me talk to engineering teams on equal terms.</span>
+                    <span data-lang-ru lang="ru">Разработка ПО на Spring Framework — техническая база, которая теперь позволяет говорить с командами разработки на равных.</span>
+                </p>
+            </li>
+
+            <li class="exp-item">
+                <div class="exp-head">
+                    <span class="exp-role">
+                        <span data-lang-en>Mechanical Engineering &amp; Manufacturing</span>
+                        <span data-lang-ru lang="ru">Машиностроение и производство</span>
+                    </span>
+                    <span class="exp-date">2002 — 2021</span>
+                </div>
+                <div class="exp-company">Alutech</div>
+                <p class="exp-note">
+                    <span data-lang-en>20 years in mechanical engineering, construction and production management — deep understanding of shop-floor operations and construction technology.</span>
+                    <span data-lang-ru lang="ru">20 лет в машиностроении, строительстве и управлении производством — глубокое понимание работы цеха и строительных технологий.</span>
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Education -->
+    <section id="education" aria-labelledby="edu-heading">
+        <h2 id="edu-heading">
+            <span data-lang-en>Education</span>
+            <span data-lang-ru lang="ru">Образование</span>
+        </h2>
+        <ul class="tags-grid">
+            <li class="tag-card">
+                <div class="tag-title">
+                    <span data-lang-en>Belarusian National Technical University</span>
+                    <span data-lang-ru lang="ru">Белорусский национальный технический университет</span>
+                </div>
+                <div class="tag-sub">
+                    <span data-lang-en>Mechanical Engineering</span>
+                    <span data-lang-ru lang="ru">Машиностроение</span>
+                </div>
+            </li>
+            <li class="tag-card">
+                <div class="tag-title">
+                    <span data-lang-en>Belarusian State Economic University</span>
+                    <span data-lang-ru lang="ru">Белорусский государственный экономический университет</span>
+                </div>
+                <div class="tag-sub">
+                    <span data-lang-en>Managerial Economics</span>
+                    <span data-lang-ru lang="ru">Экономика и управление</span>
+                </div>
+            </li>
+            <li class="tag-card">
+                <div class="tag-title">IT OVERONE</div>
+                <div class="tag-sub">
+                    <span data-lang-en>Java Developer Certificate</span>
+                    <span data-lang-ru lang="ru">Сертификат Java-разработчика</span>
+                </div>
+            </li>
+            <li class="tag-card">
+                <div class="tag-title">IPM Business Education</div>
+                <div class="tag-sub">
+                    <span data-lang-en>Professional Manager</span>
+                    <span data-lang-ru lang="ru">Профессиональный менеджер</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Core competencies -->
+    <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">
+            <span data-lang-en>Core Competencies</span>
+            <span data-lang-ru lang="ru">Ключевые компетенции</span>
+        </h2>
+        <ul class="tags-grid tags-simple">
+            <li class="tag-card"><span data-lang-en>Digital Transformation</span><span data-lang-ru lang="ru">Цифровая трансформация</span></li>
+            <li class="tag-card"><span data-lang-en>Business Development (B2B)</span><span data-lang-ru lang="ru">Развитие бизнеса (B2B)</span></li>
+            <li class="tag-card"><span data-lang-en>IT Project Management</span><span data-lang-ru lang="ru">Управление IT-проектами</span></li>
+            <li class="tag-card"><span data-lang-en>Resource Management</span><span data-lang-ru lang="ru">Управление ресурсами</span></li>
+            <li class="tag-card"><span data-lang-en>Data Analytics / BI</span><span data-lang-ru lang="ru">Аналитика данных / BI</span></li>
+            <li class="tag-card"><span data-lang-en>Enterprise Sales</span><span data-lang-ru lang="ru">Продажи крупным заказчикам</span></li>
+            <li class="tag-card"><span data-lang-en>Mechanical Engineering</span><span data-lang-ru lang="ru">Машиностроение</span></li>
+            <li class="tag-card"><span data-lang-en>Construction Tech</span><span data-lang-ru lang="ru">Технологии в строительстве</span></li>
+            <li class="tag-card"><span data-lang-en>English (Advanced)</span><span data-lang-ru lang="ru">Английский (продвинутый)</span></li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
         <div class="qr-code-container">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AVasiliy%20Sholkov%0AORG%3AA2%20Consulting%0ATITLE%3ABusiness%20Development%20Manager%0ATEL%3BTYPE%3DCELL%3A%2B375293730703%0AEMAIL%3Av.sholkov%40a2c.by%0AURL%3Ahttps%3A%2F%2Ft.me%2FSholkovVasiliy%0AEND%3AVCARD" alt="QR Code vCard">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=360x360&amp;data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ASholkov%3BVasiliy%0AFN%3AVasiliy%20Sholkov%0AORG%3AA2%20Consulting%0ATITLE%3ABusiness%20Development%20Manager%0ATEL%3BTYPE%3DCELL%3A%2B375293730703%0AEMAIL%3Av.sholkov%40a2c.by%0AURL%3Ahttps%3A%2F%2Ft.me%2FSholkovVasiliy%0AURL%3Ahttps%3A%2F%2Fcalendly.com%2Fvasiliy-sholkov%2F30min%0AEND%3AVCARD"
+                 alt="QR code with Vasiliy Sholkov's contact details" width="180" height="180" loading="lazy" decoding="async">
         </div>
         <div class="contact-details">
-            <strong>Scan to save contact</strong>
-            <p>Vasiliy Sholkov</p>
-            <p>Business Development Manager</p>
-            <p>A2 Consulting</p>
-            <p><a href="tel:+375293730703">+375 (29) 373-07-03</a></p>
-            <p>TG: <a href="https://t.me/SholkovVasiliy" target="_blank">@SholkovVasiliy</a></p>
-            <p><a href="mailto:v.sholkov@a2c.by">v.sholkov@a2c.by</a></p>
-        </div>
-    </div>
+            <h3 id="contact-heading">
+                <span data-lang-en>Let's Discuss Your Project</span>
+                <span data-lang-ru lang="ru">Обсудим ваш проект?</span>
+            </h3>
+            <p>
+                <span data-lang-en>Ready to unlock the value of your data?</span>
+                <span data-lang-ru lang="ru">Готовы раскрыть ценность ваших данных?</span>
+            </p>
+            <div class="contact-line">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="M2 7l10 6 10-6"></path>
+                </svg>
+                <a href="mailto:v.sholkov@a2c.by">v.sholkov@a2c.by</a>
+            </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-text">
-            <p>Are your manufacturing or construction projects drowning in data but starving for actionable insights?</p>
-            <br>
-            <p>I help industrial enterprises turn complex data into profit by implementing modern data architectures (DWH, BI, AI/ML, Digital Twins).</p>
-            <br>
-            <p>My unique advantage? A combination of <strong>20 years in mechanical engineering</strong>, a degree in economics, and hands-on experience as a <strong>Java Developer</strong>. I don't just sell IT services—I understand the shop floor, the construction site, and the bottom line. I bridge the gap between business, production, and technology.</p>
-            
-            <ul class="highlights">
-                <li><strong>Business & IT Acumen:</strong> Successfully managed resource allocation for up to 150 specialists and supported IT projects with a monthly revenue of $600,000+.</li>
-                <li><strong>Tech & Economics:</strong> Fluent in calculating cost, profitability, and risks. Experienced working with Enterprise clients and fintech.</li>
-                <li><strong>Engineering Mindset:</strong> I find solutions where there are no out-of-the-box templates and speak the language of both engineers and programmers.</li>
-            </ul>
-            <br>
-            <p>Currently, as a Business Development Manager at A2 Consulting (Qlik Partner, CORUS Consulting Group), I help companies build a data-driven culture.</p>
+            <div class="contact-line">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"></path>
+                </svg>
+                <a href="tel:+375293730703">+375 (29) 373-07-03</a>
+            </div>
+
+            <div class="contact-line">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M21.5 3.5L2.5 10.2l6 2.3 2.3 6 10.7-15z"></path>
+                    <path d="M21.5 3.5l-13 9"></path>
+                </svg>
+                <a href="https://t.me/SholkovVasiliy" target="_blank" rel="noopener noreferrer">@SholkovVasiliy</a>
+            </div>
+
+            <div class="contact-line">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M3 21h18"></path>
+                    <path d="M5 21V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v15"></path>
+                    <path d="M15 21V11h4a2 2 0 0 1 2 2v8"></path>
+                    <path d="M8.5 8h3M8.5 12h3M8.5 16h3"></path>
+                </svg>
+                <a href="https://a2c.by/" target="_blank" rel="noopener noreferrer">a2c.by</a>
+            </div>
+
+            <button type="button" class="save-contact" id="saveContact">
+                <span data-lang-en>Save contact to phone</span>
+                <span data-lang-ru lang="ru">Сохранить контакт в телефон</span>
+            </button>
+
+            <p class="contact-note">
+                <span data-lang-en>Or scan the QR code to save my contact instantly.</span>
+                <span data-lang-ru lang="ru">Или отсканируйте QR-код, чтобы сохранить контакт.</span>
+            </p>
         </div>
     </section>
+</main>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        
-        <div class="card">
-            <div class="card-header">
-                <div>
-                    <div class="card-title">Business Development Manager</div>
-                    <div class="card-company"><a href="https://a2c.by" target="_blank">A2 Consulting</a></div>
-                </div>
-                <div class="card-date">Aug 2026 – Present</div>
-            </div>
-            <ul>
-                <li>Driving business growth and digital transformation strategies across diverse industries, including Manufacturing, Construction, Retail, and Fintech.</li>
-                <li>Spearheading B2B sales of Data Management, BI, and AI/ML solutions (Qlik, Digital Twins) for Enterprise clients.</li>
-                <li>Bridging the gap between client business needs and technical teams to deliver scalable, data-driven solutions.</li>
-                <li>Identifying new market opportunities and building long-term partnerships with key stakeholders across various sectors.</li>
-            </ul>
-        </div>
+<footer>
+    <p>© <span id="year">2026</span> <span data-lang-en>Vasiliy Sholkov</span><span data-lang-ru lang="ru">Василий Шолков</span> · <a href="https://a2c.by/" target="_blank" rel="noopener noreferrer">A2 Consulting</a></p>
+    <p class="footer-slogan">
+        <span data-lang-en>Turning industrial data into strategic decisions.</span>
+        <span data-lang-ru lang="ru">Превращаю промышленные данные в стратегические решения.</span>
+    </p>
+</footer>
 
-        <div class="card">
-            <div class="card-header">
-                <div>
-                    <div class="card-title">Lead Project Coordinator</div>
-                    <div class="card-company">Aston</div>
-                </div>
-                <div class="card-date">Jan 2026 – Aug 2026</div>
-            </div>
-            <ul>
-                <li>Managed project lifecycles and resource allocation in a high-paced IT outsourcing environment.</li>
-                <li>Ensured delivery met business objectives and profitability targets for key enterprise accounts.</li>
-                <li>Coordinated cross-functional teams, mitigating risks and resolving bottlenecks to maintain project timelines.</li>
-            </ul>
-        </div>
+<script>
+(function () {
+    'use strict';
 
-        <div class="card">
-            <div class="card-header">
-                <div>
-                    <div class="card-title">Senior Project Coordinator / Resource Manager</div>
-                    <div class="card-company">Aston</div>
-                </div>
-                <div class="card-date">Jan 2023 – Jan 2026</div>
-            </div>
-            <ul>
-                <li><strong>Key Achievement:</strong> Successfully managed the allocation and workload of up to 150 specialists.</li>
-                <li>Supported IT projects generating a monthly revenue of up to $600,000+.</li>
-                <li>Acted as a primary point of contact for enterprise clients, ensuring high satisfaction and contract renewals.</li>
-            </ul>
-        </div>
+    var META = {
+        en: {
+            title: 'Vasiliy Sholkov | Business Development Manager',
+            desc: 'Business Development Manager at A2 Consulting. I help manufacturing, construction and retail enterprises turn data into profit with DWH, BI and AI/ML.',
+            btn: 'RU',
+            btnLabel: 'Switch language to Russian'
+        },
+        ru: {
+            title: 'Василий Шолков | Менеджер по развитию бизнеса',
+            desc: 'Менеджер по развитию бизнеса в A2 Consulting. Помогаю предприятиям промышленности, строительства и ритейла превращать данные в прибыль: DWH, BI и AI/ML.',
+            btn: 'EN',
+            btnLabel: 'Переключить язык на английский'
+        }
+    };
 
-        <div class="card">
-            <div class="card-header">
-                <div>
-                    <div class="card-title">Project Coordinator / Resource Manager</div>
-                    <div class="card-company">Andersen Lab</div>
-                </div>
-                <div class="card-date">Aug 2022 – Feb 2023</div>
-            </div>
-            <p>Coordinated project teams and managed resource allocation within a large-scale IT ecosystem. Facilitated communication between developers, QA, and stakeholders.</p>
-        </div>
+    var html = document.documentElement;
+    var btnLabel = document.getElementById('langBtnLabel');
+    var btn = document.getElementById('langBtn');
+    var descTag = document.querySelector('meta[name="description"]');
 
-        <div class="card">
-            <div class="card-header">
-                <div>
-                    <div class="card-title">Java Developer</div>
-                    <div class="card-company">IT OVERONE</div>
-                </div>
-                <div class="card-date">Sep 2021 – Aug 2022</div>
-            </div>
-            <p>Hands-on software development using Spring Framework. Gained deep technical understanding of software lifecycles and agile methodologies, which now helps in communicating effectively with engineering teams.</p>
-        </div>
+    // Выбор языка НЕ сохраняется нигде: только ?lang=ru в адресе
+    // или клик по переключателю на время текущего просмотра.
+    function initialLang() {
+        var fromUrl = new URLSearchParams(location.search).get('lang');
+        return (fromUrl === 'ru' || fromUrl === 'en') ? fromUrl : 'en';
+    }
 
-        <div class="card">
-            <div class="card-header">
-                <div>
-                    <div class="card-title">Mechanical Engineering & Manufacturing</div>
-                    <div class="card-company">Alutech</div>
-                </div>
-                <div class="card-date">2002 – 2021</div>
-            </div>
-            <p>20 years of experience in mechanical engineering, construction, and production management. Deep understanding of shop floor operations, manufacturing processes, and construction technologies.</p>
-        </div>
-    </section>
+    function apply(lang) {
+        html.lang = lang;
+        html.setAttribute('data-lang', lang);
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="skills-grid">
-            <div class="skill-tag">Belarusian National Technical University<br><small style="color:var(--text-muted);">Mechanical Engineering</small></div>
-            <div class="skill-tag">Belarusian State Economic University<br><small style="color:var(--text-muted);">Managerial Economics</small></div>
-            <div class="skill-tag">IT OVERONE<br><small style="color:var(--text-muted);">Java Developer Certificate</small></div>
-            <div class="skill-tag">IPM Business Education<br><small style="color:var(--text-muted);">Professional Manager</small></div>
-        </div>
-    </section>
+        btnLabel.textContent = META[lang].btn;
+        btn.setAttribute('aria-label', META[lang].btnLabel);
+        document.title = META[lang].title;
+        if (descTag) descTag.setAttribute('content', META[lang].desc);
+    }
 
-    <section id="skills">
-        <h2>Core Competencies</h2>
-        <div class="skills-grid">
-            <div class="skill-tag">Digital Transformation</div>
-            <div class="skill-tag">Business Development (B2B)</div>
-            <div class="skill-tag">IT Project Management</div>
-            <div class="skill-tag">Resource Management</div>
-            <div class="skill-tag">Data Analytics / BI</div>
-            <div class="skill-tag">Enterprise Sales</div>
-            <div class="skill-tag">Mechanical Engineering</div>
-            <div class="skill-tag">Construction Tech</div>
-            <div class="skill-tag">English (Advanced)</div>
-        </div>
-    </section>
+    btn.addEventListener('click', function () {
+        apply(html.getAttribute('data-lang') === 'ru' ? 'en' : 'ru');
+    });
 
-</div>
+    // Убираем ключ, который мог остаться от прежней версии сайта.
+    // Иначе старый localStorage['lang']='ru' перебивал бы английский по умолчанию.
+    try { localStorage.removeItem('lang'); } catch (e) { /* ignore */ }
+
+    // Год в футере
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Кнопка «Сохранить контакт»: отдаёт .vcf — работает и на телефоне, и на десктопе
+    document.getElementById('saveContact').addEventListener('click', function () {
+        var vcard = [
+            'BEGIN:VCARD',
+            'VERSION:3.0',
+            'N:Sholkov;Vasiliy;;;',
+            'FN:Vasiliy Sholkov',
+            'ORG:A2 Consulting',
+            'TITLE:Business Development Manager',
+            'TEL;TYPE=CELL:+375293730703',
+            'EMAIL:v.sholkov@a2c.by',
+            'URL:https://t.me/SholkovVasiliy',
+            'URL:https://calendly.com/vasiliy-sholkov/30min',
+            'END:VCARD'
+        ].join('\r\n');
+
+        var blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'Vasiliy_Sholkov.vcf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    });
+
+    // Плавающая CTA: показываем, когда основная кнопка «Записаться» ушла за верх экрана.
+    var heroCta = document.querySelector('.cta-group .btn-primary');
+    var stickyCta = document.getElementById('stickyCta');
+
+    if (heroCta && stickyCta && 'IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+            // Показываем ровно тогда, когда основная кнопка НЕ видна
+            stickyCta.classList.toggle('is-visible', !entries[0].isIntersecting);
+        }, { rootMargin: '-80px 0px 0px 0px' }).observe(heroCta);
+    }
+
+    // Применяем язык сразу, без ожидания load
+    apply(initialLang());
+})();
+</script>
 
 </body>
 </html>
